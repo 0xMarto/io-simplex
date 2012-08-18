@@ -1,0 +1,280 @@
+header {
+    background-color: #002d65;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #004aa3), color-stop(100%, #002d65));
+}
+
+header a {
+    font-size: 26px;
+    font-weight: bolder;
+    color: #ffffff;
+    padding: 30px;
+    display: block;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: #0077ff;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0051ab), color-stop(100%, #0077ff));
+}
+
+nav li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.inputError {
+    border: 1px solid #f34e3e;
+    width: 40px;
+}
+
+#document.titulo {
+    display: none;
+}
+
+nav li {
+    list-style-type: none;
+    color: #ffffff;
+    margin: 0;
+    display: inline-block;
+    padding: 20px;
+}
+
+nav li a:hover, header a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.slack {
+    color: green;
+}
+
+.artificial {
+    color: blue;
+}
+
+.constrain {
+    color: #ff4500;
+}
+
+.functional {
+    color: green;
+}
+
+#panelEstandar p, #panelEstandar span, #panelEstandar strong,
+#panelPaso3 p, #panelPaso3 span, #panelPaso3 strong {
+    font-size: 20px;
+}
+
+iframe {
+    /*position: absolute;*/
+    /*top: 12px;*/
+    /*height: 750px;*/
+    /*width: 97%;*/
+    /*z-index: -1;*/
+    /*border: none;*/
+    position: absolute;
+    top: 145px;
+    left: 10px;
+    width: 98%;
+    height: 80%;
+}
+
+nav li:hover {
+    background-color: #002d65;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #004aa3), color-stop(100%, #002d65));
+    border-radius: 25px;
+}
+
+.number {
+    width: 40px;
+}
+
+p label {
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.funCBox {
+    width: 90px;
+}
+
+.equalCBox, .restriccion, #coeficienteM {
+    width: 50px;
+}
+
+#tablaDeSimplex {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tablaDeSimplex td:first-child {
+    width: 35px;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid #1e2696;
+}
+
+#tablaDeSimplex td:last-child {
+    width: 45px;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid #1e2696;
+}
+
+#tablaDeSimplex td {
+    width: 66px;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid #1e2696;
+}
+
+.optimal {
+    background-color: #8aff80;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #B4FFC0), color-stop(100%, #7EEE77));
+}
+
+#pivot {
+    background-color: #adff2f;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #adff2f), color-stop(100%, #89CB22));
+}
+
+#openPoly, #incompatible {
+    background-color: #ff4e3d;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff4e3d), color-stop(100%, #89CB22));
+}
+
+#thetaTie {
+    background-color: #fffe89;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fffe89), color-stop(100%, #89CB22));
+}
+
+.simplexBtn {
+    width: 50px;
+    height: 46px;
+    margin-left: 5px;
+    margin-right: 5px;
+    opacity: 0.7;
+}
+
+.simplexBtn:hover {
+    opacity: 1;
+}
+
+#tablaDeSimplex td:hover {
+    background-color: #049cdb;
+}
+
+#tablaDeSimplex.title {
+    font-weight: bold;
+}
+
+label {
+    float: none;
+}
+
+#panelPaso1, #panelPaso2, #panelPaso3, #panelPaso4, #panelEstandar, #loadingPanel {
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#loadingPanel {
+    margin: 120px;
+}
+
+#loadingPanel strong {
+    color: #ff9733;
+}
+
+#actividades, #marginales {
+    margin: 30px;
+}
+
+#panelPaso4 strong {
+    font-size: 20px;
+    color: #f94000;
+}
+
+#leyenda p {
+    font-size: 18px;
+}
+
+#leyenda {
+    text-align: left;
+    padding-left: 15%;
+}
+
+#panels {
+    margin-bottom: 10px;
+}
+
+#simplexButtonsPanel {
+    margin-top: 25px;
+}
+
+#contacto h5 {
+    font-size: 20px;
+    color: #f94000;
+}
+
+#contacto {
+    margin-left: 30px;
+}
+
+button {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+}
+
+#univLogo {
+    position: absolute;
+    top: 140px;
+    left: 500px;
+}
+
+#leftBt, #rightBt {
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+#leftBt {
+    left: 10px;
+}
+
+#rightBt {
+    right: 10px;
+}
+
+#leftBt:hover, #rightBt:hover {
+    opacity: 1;
+}
+
+footer {
+    position: fixed;
+    color: #ffffff;
+    font-size: 14px;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
+    background-color: #002d65;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #004aa3), color-stop(100%, #002d65));
+    text-align: center;
+    font-weight: bold;
+}
+
+#colaboradores h5 {
+    font-size: 14px;
+    color: #f94000;
+}
+#colaboradores h2 {
+    font-size: 18px;
+ }

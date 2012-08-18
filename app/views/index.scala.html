@@ -1,0 +1,150 @@
+@main(title = "ALGORITMO DE SIMPLEX") {
+
+<div id="panels">
+    <div id="panelPaso1">
+        <h3>Configuracion de Variables</h3>
+
+        <p>
+            <label for="variables">Variables: </label><input id="variables" class="number" placeholder="Ej: 2">
+        </p>
+
+        <p>
+            <label for="restricciones">Restricciones: </label><input id="restricciones" class="number"
+                                                                     placeholder="Ej: 3">
+        </p>
+    </div>
+
+    <div id="panelPaso2">
+        <h3>Analisis</h3>
+
+        <p>Cual es el objetivo de la funcion?
+            <select id="objetivo" class="funCBox">
+                <option value="MAX">Maximizar</option>
+                <option value="MIN">Minimizar</option>
+            </select>
+        </p>
+
+        <div>
+            <p>
+                <label for="coeficienteM">Coeficiente M:</label>
+                <input id="coeficienteM" placeholder="Ej: 1000">
+                <span>(opcional)</span>
+            </p>
+        </div>
+
+
+        <div id="panelDeFuncional">
+            <h3>Funcional</h3>
+
+            <p id="funcional">
+            </p>
+        </div>
+
+        <h3>Restricciones Canonicas</h3>
+
+        <div id="panelDeRestricciones">
+
+        </div>
+
+    </div>
+
+    <div id="panelEstandar">
+        <div id="panelDeFuncionalEstandar">
+            <h3>Funcional</h3>
+
+            <p id="funcionalEstandar">
+            </p>
+        </div>
+
+        <h3>Restricciones Estandar</h3>
+
+        <div id="panelDeRestriccionesEstandar">
+
+        </div>
+
+        <h3>Condiciones</h3>
+
+        <div id="condiciones">
+            <p>Se asumen variables reales y no negativas</p>
+
+            <p id="valorM"></p>
+        </div>
+
+    </div>
+
+
+    <div id="panelPaso3">
+        <div id="panelDeFuncionalSimplex">
+        </div>
+
+        <h3>Tabla de simplex - Iteracion:<span id="iterationNumber"></span></h3>
+
+        <div id="panelDeTabla">
+        </div>
+
+        <div id="loadingPanel">
+            <p>
+                <strong>Calculando Tableau  </strong>
+                <img id="loadingGif" src='@routes.Assets.at("images/orangeLoader.gif")'>
+            </p>
+        </div>
+
+        <div id="tableBts">
+            <button id="initialBtn" onclick="sendMessage('initial')">
+                <img class="simplexBtn" src='@routes.Assets.at("images/double_left_arrow.png")'/>
+            </button>
+            <button id="prevIter" onclick="sendMessage('previous')">
+                <img class="simplexBtn" src='@routes.Assets.at("images/left_arrow.png")'/>
+            </button>
+            <button id="nextIter" onclick="sendMessage('next')">
+                <img class="simplexBtn" src='@routes.Assets.at("images/right_arrow.png")'/>
+            </button>
+            <button id="optimalBtn" onclick="sendMessage('optimal')">
+                <img class="simplexBtn" src='@routes.Assets.at("images/double_right_arrow.png")'/>
+            </button>
+        </div>
+    </div>
+
+    <div id="panelPaso4">
+        <div id="funcionalPaso4">
+        </div>
+
+        <div id="valorFuncional">
+        </div>
+
+        <div id="actividades">
+        </div>
+
+        <div id="marginales">
+        </div>
+
+        <div id="leyenda">
+            <h3>Aclaracion:</h3>
+
+            <p><strong>Nivel de Actividad:</strong> Nivel optimo de produccion de la variable correspondiente. </p>
+
+            <p><strong>Valor de Exeso o Sobrante:</strong> Nivel de Exeso o Sobrande de la variable Slack
+                correspondiente.</p>
+
+            <p><strong>Valor Marginal:</strong> Nivel de variacion del funcional (en el sentido de su signo) por cada
+                unidad que se
+                relaja la restriccion correspondiente. </p>
+
+            <p><strong>Costo de Oportunidad:</strong> Valor de variacion del funcional (contrario a su signo) por cada
+                unidad que se
+                activara de la variable correspondiente. </p>
+        </div>
+    </div>
+
+</div>
+
+<div id="simplexButtonsPanel">
+    <button id="previousBtn" onclick="previousStep()">
+        <img src='@routes.Assets.at("images/left_arrow.png")' id="leftBt"/>
+    </button>
+    <button id="nextBtn" onclick="nextStep()">
+        <img src='@routes.Assets.at("images/right_arrow.png")' id="rightBt"/>
+    </button>
+</div>
+
+}
